@@ -1,4 +1,4 @@
-from sqlite3
+import sqlite3
 from flask import Flask, render_template
 
 def get_db_connection():
