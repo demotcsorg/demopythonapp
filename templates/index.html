@@ -1,5 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} CoVID-19 Vaccine Hospital List {% endblock %}</h1>
+    <h1 class="text-center">{% block title %} CoVID-19 Vaccine Hospital List {% endblock %}</h1>
+    <br style=“line-height:5;”> 
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in posts %}
+         <tr>
+            <td>{{ post['name'] }}</td>
+            <td>{{ post['address'] }}</td>
+            <td>{{ post['phone'] }}</td>
+         </tr>
+      {% endfor %}
+    </tbody>
+    </table>
 {% endblock %}
