@@ -13,4 +13,4 @@ def index():
     conn = get_db_connection()
     posts = conn.execute('SELECT * FROM hospital').fetchall()
     conn.close()
-    return render_template('index.html', posts)
+    return render_template('index.html', posts=posts)
