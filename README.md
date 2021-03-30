@@ -2,7 +2,7 @@ This is a sample app developed for [Azure Developer Stories](https://devstories.
 
 To run locally, clone the repo and run `flask run`.
 
-The repo uses Python, flask and bootstrap CSS.
+The repo uses HTML, Python, flask and bootstrap CSS.
 
 You can find details on integrating this app with Azure [here]().
 
