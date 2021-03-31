@@ -4,7 +4,7 @@ To run locally, clone the repo and run `flask run`.
 
 The repo uses HTML, Python, flask and bootstrap CSS.
 
-You can find details on integrating this app with Azure [here]().
+You can find details on integrating this app with Azure [here](https://peeyushgupta91.medium.com/creating-a-ci-cd-enabled-web-app-with-python-on-azure-792c757023df).
 
 Screengrabs:
 
