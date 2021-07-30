@@ -51,10 +51,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install pytest-cov
-          
-      - name: test with PyTest
-        run: pytest --cov=app --cov-report=xml
         
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
