@@ -58,11 +58,10 @@ jobs:
           name: python-app
           path: |
             . 
-            !node_modules/
             !venv/
-            
+
       - uses: actions/checkout@v2
-      - uses: SaurabhRai19/heroku-deploy@v3.12.12 # This is the action
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "python-cicd-sample-app" #Must be unique in Heroku
